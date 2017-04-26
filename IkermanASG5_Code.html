@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Assignment 5: Pirate Talk</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+	<img src="images/captain.png" alt="Captain Hook" height="150" width="200">
+	<img style="center" src="images/pirate.jpg" alt="pirate swap" height="150" width="200" onmouseover="this.src='images/Pirate-Ship.png'" onmouseout="this.src='images/pirate.jpg'"/>
+		<h3>Land Lubber's Pirate Translator</h3>
+		<p>Simply click on the buttons to translatewords and/or phrases from English to pirate talk.</p>
+		<table>
+			<tr>
+				<td>Greetings:</td>
+				<td>
+					<input type="button" value="Hello" 
+						onclick="document.getElementById('outputDiv').innerHTML= 
+							document.getElementById('outputDiv').innerHTML + 'ahoy ';">
+				</td>
+				<td>
+					<input type="button" value="Pardon Me" 
+						onclick="document.getElementById('outputDiv').innerHTML= 
+							document.getElementById('outputDiv').innerHTML + 'avast ';">
+				</td>
+				<td>
+					<input type="button" value="Excuse Me" 
+						onclick="document.getElementById('outputDiv').innerHTML = 
+							document.getElementById('outputDiv').innerHTML + 'arrr ';">
+				</td>
+			</tr>
+			<tr>
+				<td>People: </td>
+				<td>
+					<input type="button" value="Sir" 
+						onclick="document.getElementById('outputDiv').innerHTML = 
+							document.getElementById('outputDiv').innerHTML + 'matey ';">
+				</td>
+				<td>
+					<input type="button" value="Madam" 
+						onclick="document.getElementById('outputDiv').innerHTML = 
+							document.getElementById('outputDiv').innerHTML + 'proud beauty ';">
+				</td>
+				<td>
+					<input type="button" value="Officer" 
+						onclick="document.getElementById('outputDiv').innerHTML = 
+							document.getElementById('outputDiv').innerHTML + 'foul blaggart ';">
+				</td>
+			</tr>
+			<tr>
+				<td>Questions: </td>
+				<td>
+					<input type="button" value="Where is" 
+						onclick="document.getElementById('outputDiv').innerHTML = 
+							document.getElementById('outputDiv').innerHTML + 'whar be ';">
+				</td>
+				<td>
+					<input type="button" value="Can you help me find" 
+						onclick="document.getElementById('outputDiv').innerHTML = 
+							document.getElementById('outputDiv').innerHTML + 'know ye ';">
+				</td>
+				<td>
+					<input type="button" value="is that" 
+						onclick="document.getElementById('outputDiv').innerHTML = 
+							document.getElementById('outputDiv').innerHTML + 'be that ';">
+				</td>
+			</tr>
+			<tr>
+				<td>Articles: </td>
+				<td>
+					<input type="button" value="the" 
+						onclick="document.getElementById('outputDiv').innerHTML = 
+							document.getElementById('outputDiv').innerHTML + 'th ';">
+				</td>
+				<td>
+					<input type="button" value="my" 
+						onclick="document.getElementById('outputDiv').innerHTML = 
+							document.getElementById('outputDiv').innerHTML + 'me ';">
+				</td>
+				<td>
+					<input type="button" value="your" 
+						onclick="document.getElementById('outputDiv').innerHTML = 
+							document.getElementById('outputDiv').innerHTML + 'yer ';">
+				</td>
+			</tr>
+			<tr>
+				<td>Places:</td>
+				<td>
+					<input type="button" value="restroom" 
+						onclick="document.getElementById('outputDiv').innerHTML = 
+							document.getElementById('outputDiv').innerHTML + 'head ';">
+				</td>
+				<td>
+					<input type="button" value="restuarant" 
+						onclick="document.getElementById('outputDiv').innerHTML = 
+							document.getElementById('outputDiv').innerHTML + 'gallery ';">
+				</td>
+				<td>
+					<input type="button" value="hotel" 
+						onclick="document.getElementById('outputDiv').innerHTML = 
+							document.getElementById('outputDiv').innerHTML + 'fleabag inn ';">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" value="Clear the Translation" 
+						onclick="document.getElementById('outputDiv').innerHTML ='';">
+				</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		<hr>
+			<div id="outputDiv"></div><br><br>
+	</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Change</title>
+  <meta charset="UTF-8">
+  <style>
+  #myContainer {
+    width: 800px;
+    height: 800px;
+    position: relative;
+  }
+  .button1 {
+    position:absolute;
+    top:500px;
+    left:150px;
+  }
+  .button2 {
+    position:absolute;
+    top:500px;
+    left:175px;
+  }
+  .button3 {
+    position:absolute;
+    top:500px;
+    left:200px;
+  }
+</style>
+</head>
+<body>
+  <div id="myContainer">
+    <img id="image" src="color1.jpg" alt="Color Image">
+      <input type="button" class="button1" onclick="ButtonChange1()" value="1" />
+      <input type="button" class="button2" onclick="ButtonChange2()" value="2" />
+      <input type="button" class="button3" onclick="ButtonChange3()" value="3" />
+  </div>
+    <script>
+    function ButtonChange1(){
+      document.getElementById("image").src = "color1.jpg";
+    }
+    function ButtonChange2(){
+      document.getElementById("image").src = "color2.jpg";
+    }
+    function ButtonChange3(){
+      document.getElementById("image").src = "color3.jpg";
+    }
+  </script>
+</body>
+</html>

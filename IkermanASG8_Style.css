@@ -1,0 +1,10 @@
+	p.box{
+		float:left;
+		border: 5px solid black;
+		width: 200px;
+		height: 210px;
+		padding: 2px;
+		margin: 0 0 10px 10px;
+		font-style: italic;
+		font-size: 75%;
+	}

@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>  
+<html>
+<head>
+	<title>Elemental PHP</title>
+	<meta charset="utf-8"/>
+<script>
+var counter = 1;
+var limit = 5;
+function addInput(divName){
+     if (counter == limit)  {
+          alert("You have reached the limit of adding " + counter + " inputs");
+     }
+     else {
+          var newdiv = document.createElement('div');
+          newdiv.innerHTML = "Entry " + (counter + 1) + " <br><input type='text' name='myInputs[]'>";
+          document.getElementById(divName).appendChild(newdiv);
+          counter++;
+     }
+}
+</script>
+</head>
+<body> 
+<h1>Elemental PHP</h1>
+<p>     Today, we are going to be adding and squaring values using dynamic inputs in Javascript<br>
+	and associating a button for the user to press in order to sum or square the inserted<br>
+	values. Please try this application below! There can be a maximum of 5 dynamic inputs.
+</p>
+<form method="POST">
+     <div id="dynamicInput">
+          Entry 1<br><input type="text" name="myInputs[]">
+     </div>
+     <input type="button" value="Add another text input" onClick="addInput('dynamicInput');">
+</form>
+<input type="button" value="Square Values"><br>
+<input type="button" value="Sum Values"><br>
+<input type="submit">
+</body>
+</html>

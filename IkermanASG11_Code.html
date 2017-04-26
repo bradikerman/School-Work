@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Assignment 11</title>
+   <link rel="stylesheet" href="IkermanASG11_Style.css">
+   <link rel="stylesheet" href="/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="container"><header>
+      <div id="topHeaderRow">
+        <nav>
+          <div>
+            Welcome to Art Store <a href="#">Login</a> or <a href="#">Create new account</a>
+          </div>
+          <ul>
+            <li><a href="#"> My Account</a></li>
+            <li><a href="#"> Wish List</a></li>
+            <li><a href="#"> Shopping Cart</a></li>
+            <li><a href="#"> Checkout</a></li>
+          </ul>
+        </nav>
+      </div>   <!-- end topHeaderRow -->
+      <div id="logoRow" >
+        <h1>Art Store</h1>
+        <form>
+          <input type="text" placeholder="Search" name="search">
+          <button type="submit">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+        </form>
+      </div>  <!-- end logoRow -->
+      <div id="mainNavigationRow">
+        <nav>
+          <ul class="main-nav">
+            <li ><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Art Works</a></li>
+            <li><a href="#">Artists</a></li>
+            <li class="dropdown-toggle">
+              <a href="#" >Specials <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Special 1</a></li>
+                <li><a href="#">Special 2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>  <!-- end mainNavigationRow -->
+    </header>
+
+    <div class="product-wrapper">
+      <div class="product-row-1">
+        <h2>Self-portrait in a Straw Hat</h2>
+        <p>By <a href="#">Louise Elisabeth Lebrun</a></p>
+        <img src="images/art/113010.jpg" class="img-thumbnail img-responsive" alt="Self-portrait in a Straw Hat"/>
+      </div>
+      <div class="product-row-2">
+        <p>The painting appears, after cleaning, to be an autograph replica of a picture, the original of which was painted in Brussels in 1782 in free imitation of Rubens's 'Chapeau de Paille', which LeBrun had seen in Antwerp. It was exhibited in Paris in 1782 at the Salon de la Correspondance. LeBrun's original is recorded in a private collection in France.</p>
+        <p class="price">$700</p>
+        <div class=buttons>
+          <button type="button" >
+            <i class="fa fa-gift" aria-hidden="true"></i>
+            Add to Wish List
+          </button>
+          <button type="button" >
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            Add to Shopping Cart
+          </button>
+        </div>
+        <div class="table-container">
+          <h5>Product Details</h5>
+          <table >
+            <tr>
+              <th>Date:</th>
+              <td>1782</td>
+            </tr>
+            <tr>
+              <th>Medium:</th>
+              <td>Oil on canvas</td>
+            </tr>
+            <tr>
+              <th>Dimensions:</th>
+              <td>98cm x 71cm</td>
+            </tr>
+            <tr>
+              <th>Home:</th>
+              <td><a href="#">National Gallery, London</a></td>
+            </tr>
+            <tr>
+              <th>Genres:</th>
+              <td><a href="#">Realism</a>, <a href="#">Rococo</a></td>
+            </tr>
+            <tr>
+              <th>Subjects:</th>
+              <td><a href="#">People</a>, <a href="#">Arts</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="product-row-3">
+        <div class="cart">
+          <h3 >Cart </h3>
+          <a  href="#">
+            <img  src="images/art/tiny/116010.jpg" alt="..." width="32">
+            <p>Artist Holding a Thistle</p>
+          </a>
+
+          <a  href="#">
+            <img src="images/art/tiny/113010.jpg" alt="..." width="32">
+            <p>Self-portrait in a Straw Hat</p>
+          </a>
+
+          <strong class="cartText">Subtotal: <span >$1200</span></strong>
+          <div class="buttons">
+            <button type="button"><i class="fa fa-pencil"></i> Edit</button>
+            <button type="button"><i class="fa fa-arrow-right"></i> Checkout</button>
+          </div>
+        </div>
+
+        <div class="popular">
+          <h3 >Popular Artists</h3>
+          <ul>
+            <li><a href="#">Caravaggio</a></li>
+            <li><a href="#">Cezanne</a></li>
+            <li><a href="#">Matisse</a></li>
+            <li><a href="#">Michelangelo</a></li>
+            <li><a href="#">Picasso</a></li>
+            <li><a href="#">Raphael</a></li>
+            <li><a href="#">Van Gogh</a></li>
+          </ul>
+        </div>
+        <div class="popular">
+          <h3>Popular Genres</h3>
+          <ul>
+            <li><a href="#">Baroque</a></li>
+            <li><a href="#">Cubism</a></li>
+            <li><a href="#">Impressionism</a></li>
+            <li><a href="#">Renaissance</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="similar-products-title">Similar Products </h3>
+    <div class="similar-products-wrapper">
+      <div class="inner-wrap">
+        <img src="images/art/thumbs/116010.jpg" alt="..." >
+        <p class="similarTitle"><a href="#">Artist Holding a Thistle</a></p>
+        <div class="buttons">
+          <button type="button"><i class="fa fa-info-circle" aria-hidden="true"></i> View</button>
+          <button type="button"><i class="fa fa-gift" aria-hidden="true"></i> Wish</button>
+          <button type="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</button>
+        </div>
+      </div>
+
+      <div class="inner-wrap">
+        <img src="images/art/thumbs/120010.jpg" alt="..." >
+        <p class="similarTitle"><a href="#">Portrait of Eleanor of Toledo</a></p>
+        <div class="buttons">
+          <button type="button"><i class="fa fa-info-circle" aria-hidden="true"></i> View</button>
+          <button type="button"><i class="fa fa-gift" aria-hidden="true"></i> Wish</button>
+          <button type="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</button>
+        </div>
+      </div>
+      <div class="inner-wrap">
+        <img src="images/art/thumbs/107010.jpg" alt="..." >
+        <p class="similarTitle"><a href="#">Madame de Pompadour</a></p>
+        <div class="buttons">
+          <button type=  "button"><i class="fa fa-info-circle" aria-hidden="true"></i> View</button>
+          <button type="button"><i class="fa fa-gift" aria-hidden="true"></i> Wish</button>
+          <button type="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</button>
+        </div>
+      </div>
+      <div class="inner-wrap">
+        <img src="images/art/thumbs/106020.jpg" alt="..." >
+        <p class="similarTitle"><a href="#">Girl with a Pearl Earring</a></p>
+        <div class="buttons">
+          <button type="button"><i class="fa fa-info-circle" aria-hidden="true"></i> View</button>
+          <button type="button"><i class="fa fa-gift" aria-hidden="true"></i> Wish</button>
+          <button type="button"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</button>
+        </div>
+      </div>
+    </div>
+  </div> <!-- End of .container -->
+
+  <footer>
+    <div class="container">
+      <div class="about">
+        <h4><i class="fa fa-info-circle" aria-hidden="true"></i> About Us</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+      </div>
+
+      <div class="customer-service">
+        <h4><i class="fa fa-phone" aria-hidden="true"></i> Customer Service</h4>
+        <ul >
+          <li><a href="#">Delivery Information</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+        </ul>
+      </div>
+
+      <div class="just-ordered">
+        <h4><i class="fa fa-shopping-cart" aria-hidden="true"></i> Just Ordered</h4>
+        <div class="product-wrapper">
+          <a  href="#">
+            <img src="images/art/tiny/13030.jpg" alt="...">
+          </a>
+          <div>
+            <p> <a href="#">Arrangement in Grey and Black</a></p>
+            <em>5 minutes ago</em>
+          </div>
+        </div>
+        <div class="product-wrapper">
+          <a  href="#">
+            <img  src="images/art/tiny/116010.jpg" alt="...">
+          </a>
+          <div>
+            <p ><a href="#">Artist Holding a Thistle</a></p>
+            <em>11 minutes ago</em>
+          </div>
+        </div>
+        <div class="product-wrapper">
+          <a class="pull-left" href="#">
+            <img src="images/art/tiny/113010.jpg" alt="...">
+          </a>
+
+          <div>
+            <p class="similarTitle"><a href="#">Self-portrait in a Straw Hat</a></p>
+            <em>23 minutes ago</em>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-us">
+        <h4><i class="fa fa-envelope" aria-hidden="true"></i> Contact us</h4>
+        <form>
+          <input type="text" name="email" placeholder="Enter name ...">
+          <input type="email"  name="email" placeholder="Enter email ...">
+          <textarea  rows="3" placeholder="Enter message ..."></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+
+      <div id="copyrightRow">
+        <div class="container">
+          <span>All images are copyright to their owners. This is just a hypothetical site</span>
+          <span >&copy; <script>document.write(new Date().getFullYear())</script> Copyright Art Store</span>
+        </div>
+      </div>
+  </footer>
+
+ </body>
+</html>

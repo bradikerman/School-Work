@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Conversions</title>
+	<meta charset="UTF-8">
+<style>
+table, th, td {
+	border: 1px solid black;
+}
+table{
+	border-collapse: collapse;
+}
+th {
+	text-align: left;
+}
+</style>
+<body>
+<h1>Conversion Tables</h1>
+<table>
+	<tr>
+		<th>Length</th>
+		<th></th>
+		<th></th>
+	</tr>
+	<tr>
+		<th><input id="mi"> Miles 
+		<th><button onclick="mi2kmconvert()">DO IT </button>
+		<th><input id="km"> Kilometers
+	</tr>
+	<tr>
+		<th><input id="in"> Inches</th>
+		<th><button onclick="in2mmconvert()">DO IT </button></th>
+		<th><input id="mm"> Millimeters</th>
+	</tr>
+	<tr>
+		<th><input id="ft"> Feet</th>
+		<th><button onclick="ft2mconvert()">DO IT </button></th>
+		<th><input id="m"> Meters</th>
+	</tr>
+	<tr>
+		<th><input id="yd"> Yard</th>
+		<th><button onclick="yd2m2convert()">DO IT </button></th>
+		<th><input id="m2"> Meters</th>
+	</tr>
+	<tr>
+		<th>Area</th>
+		<th></th>
+		<th></th>
+	</tr>
+	<tr>
+		<th><input id="sft"> sq. Foot</th>
+		<th><button onclick="sft2smconvert()">DO IT </button></th>
+		<th><input id="sm"> sq. Meter</th>
+	</tr>
+	<tr>
+		<th><input id="ac"> Acre</th>
+		<th><button onclick="ac2hacconvert()">DO IT </button></th>
+		<th><input id="hac"> Hectare</th>
+	</tr>
+	<tr>
+		<th>Volume</th>
+		<th></th>
+		<th></th>
+	</tr>
+	<tr>
+		<th><input id="gal"> Gallon</th>
+		<th><button onclick="gal2lconvert()">DO IT </button></th>
+		<th><input id="l"> Liters</th>
+	</tr>
+	<tr>
+		<th><input id="oz"> Ounce</th>
+		<th><button onclick="oz2mLconvert()">DO IT </button></th>
+		<th><input id="mL"> Milliliters</th>
+	</tr>
+</table>
+
+<script>
+function mi2kmconvert() {
+    var x;
+    x = document.getElementById("mi").value * 1.61;
+    document.getElementById("km").value = x;
+}
+function in2mmconvert() {
+    var x;
+    x = document.getElementById("in").value * 25.4;
+    document.getElementById("mm").value = x;
+}
+function ft2mconvert() {
+    var x;
+    x = document.getElementById("ft").value * 0.3048;
+    document.getElementById("m").value = x;
+}
+function yd2m2convert() {
+	var x;
+	x = document.getElementById("yd").value * 0.9144;
+	document.getElementById("m2").value = x;
+}
+function sft2smconvert() {
+	var x;
+	x = document.getElementById("sft").value * 0.0929;
+	document.getElementById("sm").value = x;
+}
+function ac2hacconvert() {
+	var x;
+	x = document.getElementById("ac").value * 0.4047;
+	document.getElementById("hac").value = x;
+}
+function gal2lconvert() {
+	var x;
+	x = document.getElementById("gal").value * 3.7850;
+	document.getElementById("l").value = x;
+}
+function oz2mLconvert() {
+	var x;
+	x = document.getElementById("oz").value * 29.5735;
+	document.getElementById("mL").value = x;
+}
+</script>
+
+</body>
+</html>

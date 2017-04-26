@@ -1,0 +1,19 @@
+	li.outer{
+		text-transform: uppercase;
+		font-family: "Times New Roman", Times, serif;
+	}
+	li.inner{
+		text-transform: uppercase
+	}
+	li.middle{
+		font-family: adobe arabic;
+	}
+	li.pink{
+		background-color: pink;
+	}
+	li.blue{
+		background-color: blue;
+	}
+	li.red{
+		background-color: red;
+	}

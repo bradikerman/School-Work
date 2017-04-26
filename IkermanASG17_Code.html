@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mouseover</title>
+	<meta charset="UTF-8">
+<style>
+    body {
+        font: 25px arial, sans-serif;
+        color:red;
+    }
+    p {
+        margin: 300px;
+    }
+</style>
+<script>
+    function changethistext1(x){
+        x.style.font = "italic bold 12px/30px Georgia, serif";
+        x.style.color = "blue";
+    }
+    function changethistext2(x){
+        x.style.font = "25px arial, sans-serif";
+        x.style.color = "green";
+    }
+    function changethistext3(x){
+        x.style.font = "19px/30px Georgia, serif";
+        x.style.color = "black";
+    }
+    function changethistext4(x){
+        x.style.font = "bold 30px/30px Georgia, serif";
+        x.style.color = "orange";
+    }
+    function returnthistext(x){
+        x.style.font = "25px arial, sans-serif";
+        x.style.color = "red";
+    }
+</script>
+</head>
+<body onload="returnthistext(this)">
+        <div onmouseover="changethistext1(this)" onmouseout="returnthistext(this)">
+        My house has become more and more like a home. When I bought it in 2013, it was very bare and needed some attention that I was struggling to give it. Last year, I got married and moved my wife in there with me. To my 
+        </div>
+        <div onmouseover="changethistext2(this)" onmouseout="returnthistext(this)">surprise, it is now almost too small! It is a 4 Bedroom, 2 Bathroom house sitting on nearly 1 acre of land. It is currently inhabited by my wife, myself, my lab (Bailey), and my wife's great pyranese (Otis). Currently, the house</div>
+        <div onmouseover="changethistext3(this)" onmouseout="returnthistext(this)">is 1855 square foot, built in 2008, and just got a new HVAC unit installed in late June. Very fortunate to have the home and have also come to learn a thing or two about the maintenance and the time it takes to keep the house</div>
+        <div onmouseover="changethistext4(this)" onmouseout="returnthistext(this)">running properly. We also recently bought a riding mower that has really cut out hours of yard work. Our next project will be remodeling the Laundry room. Currently, it is in "Bachelor Mode" and has very little love. It has wire racks, some shelves, and the washer/dryer. My wife has requested that we add some cabinets, remove the wire racks, and paint the room. We will see how it goes, but I am sure it will be a fun project either way!
+        </div>
+</body>
+</html>

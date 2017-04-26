@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<TITLE>Distance Calculator</TITLE>
+<!--Your function Distance() goes here; don’t forget the appropriate tags
+	When you provide the distance to the user, be sure that you also make mention of the two
+	points that were entered by the user.
+	i.e. The first point is found at coordinates (x, y), the second point is found at coordinates (x,y)
+	the distance between these two points is ##.-->
+	<script>
+		function distance(){
+			var cx1Box = document.getElementById("x1Box").value;
+			var cy1Box = document.getElementById("y1Box").value;
+			var cx2Box = document.getElementById("x2Box").value;
+			var cy2Box = document.getElementById("y2Box").value;
+			var cc = Math.sqrt( (cx2Box-=cx1Box)*cx2Box + (cy2Box-=cy1Box)*cy2Box );
+			var msg = "The Distance between Points (";
+			msg += document.getElementById("x1Box").value;
+			msg += ",";
+			msg += document.getElementById("y1Box").value;
+			msg += ") and (";
+			msg += document.getElementById("x2Box").value; 
+			msg += ",";
+			msg += document.getElementById("y2Box").value;
+			msg += ") is equal to: "; 
+			msg += cc;
+			document.getElementById("demo").innerHTML = msg;
+		}
+	</script>
+</HEAD>
+<BODY>
+<H2>Distance Calculator</H2>
+<P>
+Coordinate 1: <br>
+<!--Write the input code needed for the coordinates of the points to be entered.
+	Your id for your x value should be x1Box
+	Your id for your y value should be y1Box-->
+	First X Value: <input id="x1Box"><br>
+	First Y Value: <input id="y1Box"><br>
+	
+<BR>
+Coordinate 2:<br>
+<!--Write the input code needed for the coordinates of the points to be entered.
+	Your id for your x value should be x2Box
+	Your id for your y value should be y2Box-->
+	Second X Value: <input id="x2Box"><br>
+	Second Y Value: <input id="y2Box"><br>
+</P>
+<!--Here's where you would put the INPUT button and attributes for the button to perform the
+	computation.-->
+	<input type="button" onclick="distance()" id="myBtn" value="Compute">
+<HR>
+<DIV id="outputDiv">
+	<p id="demo"></p>
+</DIV>
+</BODY>
+</HTML>

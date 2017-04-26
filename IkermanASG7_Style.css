@@ -1,0 +1,19 @@
+	table{
+		border-collapse: collapse;
+		width: 100%;
+	}
+	tr:nth-child(even){
+		background-color: #dddddd;
+	}
+	th {
+		background-color: #000000;
+		color: white;
+	}
+	td.script{
+		font-family: "Brush Script MT", cursive;
+	}
+	td.winner{
+		font-size: 125%;
+		font-family: "Brush Script MT",cursive;
+		font-style: italic;
+	}
